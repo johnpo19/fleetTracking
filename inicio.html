@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <fieldset class="cargar">
+            <legend>Lista Vehículos</legend>
+            <div class="listaCargar"></div>
+        </fieldset>
+        <fieldset class="insertar">
+            <legend>Agregar Vehículo</legend>
+            <form action="" method="post">
+
+                <label for="titulo">Matricula:</label>
+                <input id="matricula" placeholder="Matricula" autofocus>
+
+                <label for="marca">Marca</label>
+                <input id="marca" placeholder="Marca">
+
+                <label for="modelo">Modelo</label>
+                <input id="modelo" placeholder="Modelo">
+
+                <label for="color">Color</label>
+                <input id="color" placeholder="Color">
+
+                <label for="carburante">Carburante</label>
+                <select name="carburante" id="carburante">
+                    <option value="gasolina">gasolina</option>
+                    <option value="diesel">diesel</option>
+                </select>
+
+                <label for="cambio">Cambio</label>
+                <select name="cambio" id="cambio">
+                    <option value="automatico">automático</option>
+                    <option value="manual">manual</option>
+                </select>
+
+                <div class="listainsertar"></div>
+                <button class="btinsertar">Agregar</button>
+
+            </form>
+
+
+        </fieldset>
+
+        <fieldset class="editar">
+            <legend>Borrar Vehículo:</legend>
+            <p>Inserte la matrícula del coche que desea borrar</p>
+            <form action="" method="post">
+                <label for="tituloEditar">Matricula:</label>
+                <input id="matriculaEditar" placeholder="Matricula" autofocus>
+
+                <div class="listaborrar"></div>
+                <button class="btborrar">Borrar</button>
+            </form>
+
+        </fieldset>
+
+    </section>
+
+</body>
+
+</html>
